@@ -21,4 +21,4 @@ Taylor Swift
 Every invocation gives different result. Try until you're satisfied.
 
 ## License ? 
-Kidding me ?
+¯﹨_〔ツ〕﹏丿¯

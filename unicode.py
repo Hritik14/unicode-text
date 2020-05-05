@@ -16,13 +16,14 @@ with open(CONFUSABLES, "r") as f:
         if len(tokens) < 2:
             continue
 
+        # Double char support possible here, maybe later
         key = "".join([chr(int(t, 16)) for t in tokens[1].split()])
         val = chr(int(tokens[0], 16))
 
         if key in m:
             m[key].append(val)
         else:
-            m[key] = []
+            m[key] = [key]
 
 for c in string:
     try:

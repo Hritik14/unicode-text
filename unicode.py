@@ -25,4 +25,7 @@ with open(CONFUSABLES, "r") as f:
             m[key] = []
 
 for c in string:
-    print(random.choice(m[c]), end="")
+    try:
+        print(random.choice(m[c]), end="")
+    except KeyError:
+        print(c, end="")
